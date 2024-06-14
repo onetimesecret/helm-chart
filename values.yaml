@@ -1,0 +1,35 @@
+redis:
+  enabled: true
+  auth:
+    enabled: false
+  architecture: standalone
+  master:
+    persistence:
+      enabled: true
+      size: 1Gi  # Adjust the size as needed
+
+onetimesecret:
+  image: 
+    registry: docker.io
+    repository: onetimesecret/onetimesecret
+    tag: ""   # overrides the image tag whose default is the chart appVersion
+  service:
+    type: ClusterIP
+  env:
+    COLONEL: "admin@example.com"
+    SSL: "false"  # Ensure this is a string
+    SMTP_HOST: "smtp.example.com" # Update your smtp configuration details
+    SMTP_PORT: "587"
+    SMTP_USERNAME: "username"
+    SMTP_PASSWORD: "password"
+    FROM_EMAIL: "no-reply@example.com"
+    TO_EMAIL: "no-reply@example.com"
+
+
+ingress:
+  enabled: true
+  annotations: {}
+  hosts:
+    - host: onetimesecret.example.com
+      paths: ["/"]
+  tls: []
