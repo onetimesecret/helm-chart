@@ -17,7 +17,7 @@ onetimesecret:
     type: ClusterIP
   env:
     COLONEL: "admin@example.com"
-    SSL: "false"  # Ensure this is a string
+    SSL: "true"  # Ensure this is a string
     SMTP_HOST: "smtp.example.com" # Update your smtp configuration details
     SMTP_PORT: "587"
     SMTP_USERNAME: "username"
@@ -27,6 +27,7 @@ onetimesecret:
 
 
 ingress:
+  # ingressClassName: ""
   enabled: true
   annotations: {}
   hosts:
