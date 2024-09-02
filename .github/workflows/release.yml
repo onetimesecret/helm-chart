@@ -13,16 +13,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Configure Git
-        run: |
-          git config user.name "$GITHUB_ACTOR"
-          git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
-
-      - name: Run chart-releaser
-        uses: bitdeps/helm-oci-charts-releaser@v0.1.0
+      - name: Chart | Push
+        uses: appany/helm-oci-chart-releaser@v0.3.0
         with:
-            oci_registry: ghcr.io/username
-            oci_username: username
-            oci_password: ${{ secrets.GITHUB_TOKEN }}
-            github_token: ${{ secrets.GITHUB_TOKEN }}
-            charts_dir: .
+          name: my-chart
+          repository: appany
+          tag: 0.1.0-RC2
+          path: . # Default charts/{name}
+          registry: ghcr.io
+          registry_username: ${{ github.actor }}
+          registry_password: ${{ secrets.GITHUB_TOKEN }}
+          update_dependencies: 'true' # Defaults to false
