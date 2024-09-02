@@ -13,6 +13,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Install Helm
+        uses: azure/setup-helm@v4.2.0
+
+    - name: generate secret
+      id: generate-secret
+      shell: bash
+      run: |
+        helm dependency update
+
       - name: Chart | Push
         uses: appany/helm-oci-chart-releaser@v0.3.0
         with:
