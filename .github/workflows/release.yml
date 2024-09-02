@@ -23,4 +23,4 @@ jobs:
           registry: ghcr.io
           registry_username: ${{ github.actor }}
           registry_password: ${{ secrets.GITHUB_TOKEN }}
-          update_dependencies: 'true' # Defaults to false
+          update_dependencies: 'false' # Defaults to false
