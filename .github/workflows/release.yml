@@ -19,7 +19,7 @@ jobs:
       - name: get helm dependencies
         shell: bash
         run: |
-          helm repo add https://charts.bitnami.com/bitnami
+          helm repo add bitnami https://charts.bitnami.com/bitnami
           helm dependency build
 
       - name: Chart | Push
