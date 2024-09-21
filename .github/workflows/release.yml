@@ -27,7 +27,7 @@ jobs:
         with:
           name: onetimesecret
           repository: ${{ github.repository }}
-          tag: 0.1.0-RC2
+          tag: ${{ github.ref }}
           path: . # Default charts/{name}
           registry: ghcr.io
           registry_username: ${{ github.actor }}
