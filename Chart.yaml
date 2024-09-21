@@ -21,9 +21,9 @@ version: 0.1.0-RC3
 # incremented each time you make changes to the application. Versions are not expected to
 # follow Semantic Versioning. They should reflect the version the application is using.
 # It is recommended to use it with quotes.
-appVersion: v0.13.0-RC9
+appVersion: v0.17.0
 
 dependencies:
   - name: redis
-    version: 19.2.0  # Choose the appropriate version
+    version: 20.3.0  # Choose the appropriate version
     repository: https://charts.bitnami.com/bitnami
