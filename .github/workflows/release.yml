@@ -1,0 +1,37 @@
+name: Release Charts
+
+on:
+  push:
+    # tags:
+    #   - '*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      packages: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Helm
+        uses: azure/setup-helm@v4.2.0
+
+      - name: get helm dependencies
+        shell: bash
+        run: |
+          helm repo add bitnami https://charts.bitnami.com/bitnami
+          helm dependency build
+
+      - name: Chart | Push
+        uses: appany/helm-oci-chart-releaser@v0.3.0
+        with:
+          name: onetimesecret
+          repository: ${{ github.repository }}
+          tag: ${{ github.ref }}
+          path: . # Default charts/{name}
+          registry: ghcr.io
+          registry_username: ${{ github.actor }}
+          registry_password: ${{ secrets.GITHUB_TOKEN }}
+          update_dependencies: 'true' # Defaults to false
