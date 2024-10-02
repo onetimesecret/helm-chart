@@ -1,4 +1,4 @@
-name: Publish Development Helm Charts
+name: Update Helm Docs
 
 on:
   push:
