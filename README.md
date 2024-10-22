@@ -4,7 +4,7 @@
 
 A Helm chart for onetimesecret. Install with
 
-`helm install onetimesecret oci://ghcr.io/onetimesecret/helm-chart/onetimesecret --version 0.1.0`
+`helm install onetimesecret oci://ghcr.io/onetimesecret/helm-chart/onetimesecret --version 0.2.0`
 
 ## Requirements
 
