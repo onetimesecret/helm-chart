@@ -28,5 +28,5 @@ appVersion: v0.18.2
 
 dependencies:
   - name: redis
-    version: 20.2.1  # Choose the appropriate version
+    version: 20.2.2  # Choose the appropriate version
     repository: https://charts.bitnami.com/bitnami
