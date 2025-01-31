@@ -1,10 +1,10 @@
 # onetimesecret
 
-![Version: 0.2.1](https://img.shields.io/badge/Version-0.2.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v0.18.3](https://img.shields.io/badge/AppVersion-v0.18.3-informational?style=flat-square)
+![Version: 0.3.0](https://img.shields.io/badge/Version-0.3.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v0.18.3](https://img.shields.io/badge/AppVersion-v0.18.3-informational?style=flat-square)
 
 A Helm chart for onetimesecret. Install with
 
-`helm install onetimesecret oci://ghcr.io/onetimesecret/helm-chart/onetimesecret --version 0.2.1`
+`helm install onetimesecret oci://ghcr.io/onetimesecret/helm-chart/onetimesecret --version 0.3.0`
 
 ## Requirements
 
@@ -21,6 +21,8 @@ A Helm chart for onetimesecret. Install with
 | ingress.hosts[0].host | string | `"onetimesecret.example.com"` |  |
 | ingress.hosts[0].paths[0] | string | `"/"` |  |
 | ingress.tls | list | `[]` |  |
+| onetimesecret.env.AUTH_SIGNIN | bool | `true` |  |
+| onetimesecret.env.AUTH_SIGNUP | bool | `true` |  |
 | onetimesecret.env.COLONEL | string | `"admin@example.com"` |  |
 | onetimesecret.env.FROM_EMAIL | string | `"no-reply@example.com"` |  |
 | onetimesecret.env.SMTP_HOST | string | `"smtp.example.com"` |  |
