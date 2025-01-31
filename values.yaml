@@ -24,6 +24,8 @@ onetimesecret:
     SMTP_PASSWORD: "password"
     FROM_EMAIL: "no-reply@example.com"
     TO_EMAIL: "no-reply@example.com"
+    AUTH_SIGNUP: true
+    AUTH_SIGNIN: true
 
 
 ingress:
