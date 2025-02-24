@@ -30,3 +30,4 @@ dependencies:
   - name: redis
     version: 20.7.0  # Choose the appropriate version
     repository: https://charts.bitnami.com/bitnami
+    condition: redis.enabled
