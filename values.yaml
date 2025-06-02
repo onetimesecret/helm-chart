@@ -27,7 +27,6 @@ onetimesecret:
     AUTH_SIGNUP: true
     AUTH_SIGNIN: true
 
-
 ingress:
   # ingressClassName: ""
   enabled: true
