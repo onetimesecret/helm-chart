@@ -3,7 +3,7 @@ name: onetimesecret
 description: |
   A Helm chart for onetimesecret. Install with
   
-  `helm install onetimesecret oci://ghcr.io/onetimesecret/helm-chart/onetimesecret --version 0.4.2`
+  `helm install onetimesecret oci://ghcr.io/onetimesecret/helm-chart/onetimesecret --version X.X.X` where X.X.X is the latest tagged version
 
 # A chart can be either an 'application' or a 'library' chart.
 #
