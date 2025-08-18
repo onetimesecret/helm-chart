@@ -10,7 +10,7 @@ A Helm chart for onetimesecret. Install with
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://charts.bitnami.com/bitnami | redis | 21.2.13 |
+| https://charts.bitnami.com/bitnami | redis | 22.0.0 |
 
 ## Values
 
