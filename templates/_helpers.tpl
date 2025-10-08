@@ -40,7 +40,7 @@ onetimesecret
 {{- end -}}
 
 {{- define "onetimesecret-chart.image.tag" -}}
-{{ default .Chart.AppVersion .Values.tag }}
+{{ default .Chart.AppVersion .Values.onetimesecret.image.tag }}
 {{- end -}}
 
 {{- define "onetimesecret-chart.redis.url" -}}
