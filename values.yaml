@@ -12,7 +12,7 @@ onetimesecret:
   image: 
     registry: docker.io
     repository: onetimesecret/onetimesecret
-    tag: ""   # overrides the image tag whose default is the chart appVersion
+    # tag: ""   # overrides the image tag whose default is the chart appVersion
   service:
     type: ClusterIP
   env:
