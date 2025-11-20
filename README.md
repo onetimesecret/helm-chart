@@ -33,7 +33,6 @@ A Helm chart for onetimesecret. Install with
 | onetimesecret.env.TO_EMAIL | string | `"no-reply@example.com"` |  |
 | onetimesecret.image.registry | string | `"docker.io"` |  |
 | onetimesecret.image.repository | string | `"onetimesecret/onetimesecret"` |  |
-| onetimesecret.image.tag | string | `""` |  |
 | onetimesecret.service.type | string | `"ClusterIP"` |  |
 | redis.architecture | string | `"standalone"` |  |
 | redis.auth.enabled | bool | `false` |  |
