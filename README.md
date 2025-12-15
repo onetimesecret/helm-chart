@@ -1,10 +1,10 @@
 # onetimesecret
 
-![Version: v0.6.2](https://img.shields.io/badge/Version-v0.6.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v0.18.5](https://img.shields.io/badge/AppVersion-v0.18.5-informational?style=flat-square)
+![Version: v0.6.3](https://img.shields.io/badge/Version-v0.6.3-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v0.18.5](https://img.shields.io/badge/AppVersion-v0.18.5-informational?style=flat-square)
 
 A Helm chart for onetimesecret. Install with
 
-`helm install onetimesecret oci://ghcr.io/onetimesecret/helm-chart/onetimesecret --version v0.6.2`
+`helm install onetimesecret oci://ghcr.io/onetimesecret/helm-chart/onetimesecret --version v0.6.3`
 
 ## Requirements
 
