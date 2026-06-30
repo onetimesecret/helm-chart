@@ -2,7 +2,7 @@ apiVersion: v2
 name: onetimesecret
 description: |
   A Helm chart for onetimesecret. Install with
-  
+
   `helm install onetimesecret oci://ghcr.io/onetimesecret/helm-chart/onetimesecret --version v0.6.3`
 
 # A chart can be either an 'application' or a 'library' chart.
@@ -18,7 +18,7 @@ type: application
 # This is the chart version. This version number should be incremented each time you make changes
 # to the chart and its templates, including the app version.
 # Versions are expected to follow Semantic Versioning (https://semver.org/)
-version: v0.6.3
+version: 0.6.4
 
 # This is the version number of the application being deployed. This version number should be
 # incremented each time you make changes to the application. Versions are not expected to
@@ -28,6 +28,6 @@ appVersion: v0.18.5
 
 dependencies:
   - name: redis
-    version: 27.0.0  # Choose the appropriate version
+    version: 27.0.0 # Choose the appropriate version
     repository: https://charts.bitnami.com/bitnami
     condition: redis.enabled
